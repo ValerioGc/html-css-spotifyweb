@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #000;
+    --primary-color-light: #141922;
+    --secondary-color: #fff;
+    --secondary-color-light: #717171;
+    --grey-color: #282828;
+}
+
+aside {
+    background-color: var(--primary-color);
+}
+#call-action {
+    background-color: #080b1276;
+}
+#main-page {
+    background-color: var(--primary-color-light);
+}
+footer {
+    background-color: var(--grey-color);
+}
