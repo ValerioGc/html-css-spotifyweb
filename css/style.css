@@ -6,6 +6,34 @@
     padding: 0;
 }
 
+/* Regole comuni testo */
+.uppercase {
+    text-transform: uppercase;
+}
+.text-dec-n {
+    text-decoration: none;
+}
+.l-height-1 {
+    line-height: 1rem;
+}
+.l-height-2 {
+    line-height: 2rem;
+}
+.t-align-c {
+    text-align: center;
+}
+.t-align-r {
+    text-align: right;
+}
+.bold {
+    font-weight: bold;
+}
+.b-rad-30p {
+    border-radius: 30px;
+}
+.b-rad-50 {
+    border-radius: 50%;
+}
 /* Regole comuni Display */
 .d-none {
     display: none;
@@ -67,9 +95,10 @@ aside {
     top: 0;
     right: 0;
     z-index: 1;
-    width: 100%;
+    width: 86%;
     height: 6rem;
     flex-shrink: 0;
+
 }
 #main-page {
     overflow-y: scroll;
@@ -80,13 +109,18 @@ aside {
 footer {
     height: 10vh;
 }
+/* Regole Bottoni */
+.btn {
+    float: right;
+    border: 1px solid #fff;
+    margin: 1.8rem 0.2rem;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+}
 /* Regole Aside */
 /* Regole main-page */
 /* Regole footer*/
-.uppercase {
-    text-transform: uppercase;
-}
 
-a.btn {
-    text-decoration: none;
-}
+
+
+

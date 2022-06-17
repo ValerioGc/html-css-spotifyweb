@@ -5,7 +5,7 @@
     --secondary-color-light: #717171;
     --grey-color: #282828;
 }
-
+/* Colori Sezioni Pagina */
 aside {
     background-color: var(--primary-color);
 }
@@ -17,4 +17,8 @@ aside {
 }
 footer {
     background-color: var(--grey-color);
+}
+
+.btn {
+    color: var(--secondary-color);
 }
