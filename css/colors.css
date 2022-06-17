@@ -18,7 +18,9 @@ aside {
 footer {
     background-color: var(--grey-color);
 }
-
 .btn {
     color: var(--secondary-color);
+}
+.btn.t2 {
+    color: var(--secondary-color-light);
 }

@@ -2,18 +2,13 @@
 .debug * {
     border: 0.5px dotted black;
 }
-
-/* Regole Debug misure */
-
 /* Regole debug colori */
 .debug main {
-    backgroun-color: blue;
+    background-color: blue;
 } 
-
 .debug aside {
     background-color: rgb(255, 0, 0);
 } 
-
 .debug #main-page {
     background-color: rgb(47, 255, 0);
     overflow-y: scroll;
