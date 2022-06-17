@@ -8,6 +8,10 @@
 /* Colori Sezioni Pagina */
 aside {
     background-color: var(--primary-color);
+    color: var(--secondary-color-light);
+}
+aside ul li a, aside ul li a:active, aside hr {
+    color: var(--secondary-color-light);
 }
 #call-action {
     background-color: #080b1276;
@@ -22,5 +26,19 @@ footer {
     color: var(--secondary-color);
 }
 .btn.t2 {
+    color: var(--secondary-color-light);
+}
+#home,
+.fa-house,
+aside h3,
+aside h4 {
+    color: var(--secondary-color);
+}
+.fa-plus {
+    background-color: var(--secondary-color-light);
+    color: var(--primary-color);
+
+}
+aside h4 i {
     color: var(--secondary-color-light);
 }

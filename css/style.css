@@ -13,6 +13,9 @@
 .text-dec-n {
     text-decoration: none;
 }
+.list-sty-n {
+    list-style-type: none;
+}
 .l-height-1 {
     line-height: 1rem;
 }
@@ -48,6 +51,9 @@
 .d-flex {
     display: flex;
 }
+.flex-d-col {
+    flex-direction: column;
+}
 .just-sp-between {
     justify-content: space-between;
 }
@@ -66,6 +72,16 @@
 .pad-x-2 {
     padding-left: 2rem;
     padding-right: 2rem;
+}
+.pad-y-0_5 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.pad-y-t-0_5 {
+    padding-top: 0.5rem;
+}
+.pad-y-b-0_5 {
+    padding-bottom: 0.5rem;
 }
 .pad-y-1 {
     padding-top: 1rem;
@@ -100,8 +116,10 @@ aside {
     flex-shrink: 0;
 
 }
-#main-page {
+.overflow-y {
     overflow-y: scroll;
+}
+#main-page {
     width: 100%;
     padding-top: 7rem ;
 }
@@ -122,5 +140,45 @@ footer {
 /* Regole footer*/
 
 
+ul li a {
+    text-decoration: none;
+}
 
+ul li {
+    line-height: 2rem;
+}
 
+.v-align-m {
+    vertical-align: middle;
+}
+
+.fa-plus {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+.w-70 {
+    width: 70%;
+}
+
+aside > div:first-child {
+    margin:0 1.5rem 0.5rem;
+}
+aside > div {
+    margin:0 1.5rem;
+}
+
+#playlist {
+    height: 64%;
+}
+
+#plylist .fa-plus {
+    font-size: 2rem;
+}
+
+.font-s-1_5 {
+    font-size: 1.5rem;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
