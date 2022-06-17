@@ -9,8 +9,14 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 /* Regole comuni testo */
+.font-s-0_5 {
+    font-size: 0.8rem;
+}
 .font-s-1_5 {
     font-size: 1.5rem;
+}
+.font-s-2_5 {
+    font-size: 2.5rem;
 }
 .uppercase {
     text-transform: uppercase;
@@ -65,10 +71,16 @@ body {
 .flex-d-col {
     flex-direction: column;
 }
+.f-shrink {
+    flex-shrink: 1;
+}
+.just-center {
+    justify-content: center;
+}
 .just-sp-between {
     justify-content: space-between;
 }
-.al-items-center {
+.al-items-c {
     align-items: center;
 }
 /* Regole comuni Padding */
@@ -80,6 +92,14 @@ body {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+.mar-y-0_5 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.pad-x-0_5 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
 .pad-y-t-0_5 {
     padding-top: 0.5rem;
 }
@@ -90,6 +110,9 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+.margin-y-b-2 {
+    margin-bottom: 2rem;
+}
 /* Regole comuni Dimensioni */
 .w-70 {
     width: 70%;
@@ -97,9 +120,12 @@ body {
 .w-100 {
     width: 100%;
 }
+.h-100 {
+    height: 100%;
+}
 /* Regole pagina*/
 main {
-    height: 90vh;
+    height: 88vh;
 }
 ul li a {
     text-decoration: none;
@@ -145,10 +171,11 @@ aside > div {
 }
 /* Regole main-page */
 #main-page {
-    padding-top: 7rem;
+    padding-top: 8rem;
 }
 #main-page ul li {
     display: inline-block;
+    padding: 0 1rem;
 }
 .card {
     margin: 1.5rem 0.5rem;
@@ -156,6 +183,60 @@ aside > div {
 }
 /* Regole footer*/
 footer {
-    height: 10vh;
+    height: 12vh;
 }
+footer > div img {
+    width: 20%;
+    margin: 0 0 0 1rem;
+}
+#main-page .img-playlist > img {
+    display: block;
+}
+.img-playlist {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000082;
+    display: none;
+}
+/* Footer */
+footer > div > div:first-child {
+    color: var(--secondary-color-light);
+    flex-basis: 15%;
+}
+footer #player-bar {
+    flex-basis: 40%;
+}
+footer > div > div:last-child {;
+    flex-basis: 15%;
+}
+
+
+/* Player Progression Bar */
+.play-b, .pb2, .pb2_2 {
+    background-color: #5a5a5a;
+    height: 6px;
+}
+.play-b .pb2 {
+    width: 50%;
+    margin-right: 1rem;
+}
+.play-b .pb_2 {
+    width: 80%;
+}
+.play-b-bkg {
+    background-color: #c1c1c1;
+    width: 25%;
+}
+
+
+
+
+
+
+
 

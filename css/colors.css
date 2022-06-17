@@ -41,3 +41,6 @@ aside h4 i,
     background-color: var(--secondary-color-light);
     color: var(--primary-color);
 }
+.col-w {
+    color: var(--secondary-color);
+}

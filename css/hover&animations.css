@@ -1,0 +1,5 @@
+/* Effetti Main Page */
+.img-playlist:hover .overlay {
+    display: flex;
+    transition:all 0.2s linear 0.1s;
+}
