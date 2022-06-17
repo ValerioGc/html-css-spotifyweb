@@ -5,12 +5,21 @@
     --secondary-color-light: #717171;
     --grey-color: #282828;
 }
+/* Regole colori generali */
+.col-w {
+    color: var(--secondary-color);
+}
+.col-inherit {
+    color: inherit;
+}
 /* Colori Sezioni Pagina */
 aside {
     background-color: var(--primary-color);
-    color: var(--secondary-color-light);
 }
-aside ul li a, aside ul li a:active, aside hr {
+aside,
+aside ul li a, 
+aside ul li a:active,
+aside hr {
     color: var(--secondary-color-light);
 }
 #call-action {
@@ -34,13 +43,11 @@ aside h4 {
 .btn.t2,
 aside h4 i,
 #main-page,
-#main-page ul li a {
+#main-page ul li a,
+#dx-foot {
     color:var(--secondary-color-light)
 }
 .fa-plus {
     background-color: var(--secondary-color-light);
     color: var(--primary-color);
-}
-.col-w {
-    color: var(--secondary-color);
 }
