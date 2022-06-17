@@ -22,23 +22,22 @@ aside ul li a, aside ul li a:active, aside hr {
 footer {
     background-color: var(--grey-color);
 }
-.btn {
-    color: var(--secondary-color);
-}
-.btn.t2 {
-    color: var(--secondary-color-light);
-}
+.btn,
+#main-page h1,
+#main-page h2,
 #home,
 .fa-house,
 aside h3,
 aside h4 {
     color: var(--secondary-color);
 }
+.btn.t2,
+aside h4 i,
+#main-page,
+#main-page ul li a {
+    color:var(--secondary-color-light)
+}
 .fa-plus {
     background-color: var(--secondary-color-light);
     color: var(--primary-color);
-
-}
-aside h4 i {
-    color: var(--secondary-color-light);
 }
