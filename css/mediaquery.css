@@ -1,0 +1,115 @@
+/* Breakpoints 
+    LG= 992px
+    MD= 768
+    S= 576
+    XS= >576px
+    XXS= > 491
+ */
+/*****************************
+***MediaQuery Max-992px(MD)***
+*****************************/
+@media screen and (max-width: 992px) {
+    #player-bar a i {
+        padding: 0 0.4rem;
+    }
+    .container {
+        justify-content: flex-start;
+    }
+    .card {
+        margin: 1rem 0.5rem;
+        width: calc(100% / 4 - 1rem);
+    }
+    #main-page h3, #main-page p {
+        font-size: smaller;
+    }
+}
+/*****************************
+***MediaQuery Max-768px(S)****
+*****************************/
+@media screen and (max-width: 768px) {
+    #player-bar a i {
+        padding: 0 0.3rem;
+    }
+    .card {
+        margin: 1rem 0.5rem;
+        width: calc(100% / 2 - 1rem);
+    }
+    #main-page h3 {
+        font-size: large;
+    }
+    #main-page p {
+        font-size: initial;
+    }
+}
+/*****************************
+***MediaQuery Max-576px(XS)***
+*****************************/
+@media screen and (max-width: 576px) {
+    aside ul li a, 
+    #playlist h4, 
+    #playlist i.fa-plus,
+    #logo,
+    #playlist h5, 
+    #foot-side-nav h4 a,
+    #foot-side-nav h5 a,
+    #foot-side-nav hr,
+    #foot-side-nav p a {
+        display: none;
+    }
+    #logo-small {
+        display: inline-block;
+    }
+    aside {
+        width: 4rem;
+    }
+    #call-action {
+        width: calc(100% - 4rem);
+    }
+    .btn {
+        padding:  0.4rem 1rem;
+    }
+    #player-bar a i {
+        padding: 0 0.2rem;
+    }
+    footer > div img {
+        width: 2rem;
+    }
+        #player-bar a i {
+            font-size: 1.4rem;
+        }
+    
+        #player-bar .fa-circle-play {
+            font-size: 1.9rem !important;
+        }
+}
+/*****************************
+***MediaQuery Max-491px(XXS)**
+*****************************/
+@media screen and (max-width: 491px) {
+    .card {
+        margin: 1rem 0.5rem;
+        width: calc(100% - 1rem);
+    }
+    #dx-foot {
+        flex-wrap: wrap;
+    }
+    #player-bar a i{
+        font-size: 1.3rem;
+    }
+    #player-bar .fa-circle-play {
+        font-size: 1.8rem!important;
+    }
+    footer #player-bar {
+        flex-basis: 50%;
+    }
+    #call-action,
+    .fa-heart,
+    .fa-folder,
+    footer > div img,
+    #dx-foot .play-b {
+        display: none!important;
+    }
+    #main-page {
+        padding-top: 2rem;
+    }
+}

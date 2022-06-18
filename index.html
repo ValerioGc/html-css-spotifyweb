@@ -30,7 +30,8 @@
             -->
             <aside class="bold">
                 <div id="nav-app">
-                    <img class="w-70 pad-y-1" src="img/logo.svg" alt="Logo Spotify">
+                    <img class="pad-y-1" id="logo" src="img/logo.svg" alt="Logo Spotify">
+                    <img class="pad-y-1 d-none" id="logo-small" src="img/logo-small.svg" alt="Logo Spotify small">
                     <ul class="list-sty-n">
                         <li class="pad-y-b-0_5">
                             <i class="fa-solid fa-house font-s-1_5 v-align-m"></i>
@@ -80,10 +81,12 @@
                             <a class="text-dec-n col-inherit" href="#">Installa app</a>
                         </p>
                         <hr>
-                        <h4 class="v-align-m pad-y-t-0_5">
+                        <div class="v-align-m pad-y-t-0_5">
                             <i class="fa-regular font-s-1_5 fa-circle-user v-align-m"></i>
-                            <a class="text-dec-n col-inherit" href="#">John Doe</a>
-                        </h4>
+                            <h4 class="d-in-block">
+                                <a class="text-dec-n col-inherit" href="#">John Doe</a>
+                            </h4>
+                        </div>
                     </div>
                 </div>
 
@@ -102,7 +105,7 @@
                     <!-- 
                         Nav-bar Corpo Pagina 
                     -->
-                    <ul class="color-hov d-flex just-center al-items-c uppercase list-sty-n">
+                    <ul class="color-hov d-flex just-center flex-wrap al-items-c uppercase list-sty-n">
                         <li>
                             <a href="#">in evidenza</a>
                             <hr>
@@ -129,7 +132,7 @@
                 -->
                 <div>
                     <h1 class="pad-y-1">Recently Played</h1>
-                    <div class="d-flex just-sp-between">
+                    <div class="d-flex flex-wrap container just-sp-between">
                         <div class="card t-align-c">
                             <div class="img-playlist">
                                 <img class="w-100" src="img/metal_lifting.jpg" alt="Immagine Playlist Heavy Metal">
@@ -137,7 +140,7 @@
                                     <i class="fa-regular fa-circle-play fa-4x col-w"></i>
                                 </div>
                             </div>
-                            <h2 class="pad-y-1">Heavy Metal</h2>
+                            <h3 class="pad-y-1">Heavy Metal</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="card t-align-c">
@@ -147,7 +150,7 @@
                                     <i class="fa-regular fa-circle-play fa-4x col-w"></i>
                                 </div>
                             </div>                    
-                            <h2 class="pad-y-1">Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</h2>
+                            <h3 class="pad-y-1">Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</h3>
                             <p>Kyle Dixon & Michael Stain</p>
                         </div>
                         <div class="card t-align-c">
@@ -157,7 +160,7 @@
                                     <i class="fa-regular fa-circle-play fa-4x col-w"></i>
                                 </div>                            
                             </div>
-                            <h2 class="pad-y-1">A Quiet Place</h2>
+                            <h3 class="pad-y-1">A Quiet Place</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="card t-align-c">
@@ -167,7 +170,7 @@
                                     <i class="fa-regular fa-circle-play fa-4x col-w"></i>
                                 </div>                
                             </div>            
-                            <h2 class="pad-y-1">Split</h2>
+                            <h3 class="pad-y-1">Split</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="card t-align-c">  
@@ -177,7 +180,7 @@
                                     <i class="fa-regular fa-circle-play fa-4x col-w"></i>
                                 </div>
                             </div>
-                            <h2 class="pad-y-1">A cure for wellness</h2>
+                            <h3 class="pad-y-1">A cure for wellness</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="card t-align-c">
@@ -187,7 +190,7 @@
                                     <i class="fa-regular fa-circle-play fa-4x col-w"></i>
                                 </div>
                             </div>
-                            <h2 class="pad-y-1">Sinister</h2>
+                            <h3 class="pad-y-1">Sinister</h3>
                             <p>Subtitle</p>
                         </div>
                     </div>
@@ -198,7 +201,7 @@
                 <div>
                     <h1 class="pad-y-1">Creato per John Doe</h1>
                     <p>Più ascolti, più accurati saranno i suggerimenti</p>
-                    <div class="d-flex al-items-c">
+                    <div class="d-flex al-items-c flex-wrap">
                         <div class="card t-align-c">
                             <div class="img-playlist">
                             <img class="w-100" src="img/radar.jpeg" alt="Immagine Playlist Release Radar">                                
@@ -206,7 +209,7 @@
                                     <i class="fa-regular fa-circle-play fa-4x col-w"></i>
                                 </div>
                             </div>
-                            <h2 class="pad-y-1">Release Radar</h2>
+                            <h3 class="pad-y-t-1">Release Radar</h3>
                         </div>
                         <div class="card t-align-c">
                             <div class="img-playlist">
@@ -215,7 +218,7 @@
                                     <i class="fa-regular fa-circle-play fa-4x col-w"></i>
                                 </div>
                             </div>
-                            <h2 class="pad-y-1">Dailty Mix 1</h2>
+                            <h3 class="pad-y-t-1">Daily Mix 1</h3>
                         </div>
                     </div>
                 </div>
@@ -233,7 +236,7 @@
                                     <i class="fa-regular fa-circle-play fa-4x col-w"></i>
                                 </div>
                             </div>
-                            <h2 class="pad-y-1">Lana Del Rey</h2>
+                            <h3 class="pad-y-1">Lana Del Rey</h3>
                         </div>
                         <div class="card t-align-c">
                             <div class="img-playlist">
@@ -242,7 +245,7 @@
                                     <i class="fa-regular fa-circle-play fa-4x col-w"></i>
                                 </div>
                             </div>
-                            <h2 class="pad-y-1">Ludovico Enaudi</h2>
+                            <h3 class="pad-y-1">Ludovico Enaudi</h3>
                         </div>
                     </div>
                 </div>
@@ -273,7 +276,6 @@
                     Parte centrale player
                  -->
                 <div class="col-w t-align-c" id="player-bar">
-
                     <div class="pad-y-0_5">
                         <a class="text-dec-n col-inherit" href="#">
                             <i class="fa-solid fa-shuffle font-s-1_5 pad-x-0_5"></i>
@@ -291,7 +293,6 @@
                             <i class="fa-solid fa-rotate-right font-s-1_5 pad-x-0_5"></i>
                         </a>
                     </div>
-
                     <div class="d-flex al-items-c just-sp-between pad-y-t-0_5">
                         <p>0:25</p>
                         <div class="play-b pb2_2 b-rad-30p">
@@ -304,7 +305,7 @@
                 <!--
                     Parte SX Player 
                 -->
-                    <div class="d-flex al-items-c just-sp-between w-100" id="dx-foot">
+                <div class="d-flex al-items-c just-sp-between w-100" id="dx-foot">
                         <a class="text-dec-n col-inherit" href="#"><i class="fa-solid fa-list-ul"></i></a>
                         <a class="text-dec-n col-inherit" href="#"><i class="fa-solid fa-display"></i></a>
                         <a class="text-dec-n col-inherit" href="#"><i class="fa-solid fa-volume-high"></i></a>
@@ -312,7 +313,7 @@
                             <div class="play-b-bkg h-100 b-rad-30p"></div>
                             <svg class="pointer-bar d-none b-rad-50" height="1rem" width="1rem"></svg>
                         </div>
-                    </div>
+                </div>
             </div>
         </footer>
     </body>
