@@ -219,7 +219,6 @@ aside h5 {
     right: 0;
     width: calc(100% - 15rem);
     height: 6rem;
-    flex-shrink: 0;
     z-index: 10;
 }
 #call-action a {
