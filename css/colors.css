@@ -67,7 +67,7 @@ aside hr {
 footer {
     background-color: var(--grey-color);
 }
-footer>div>div:first-child {
+footer > div > div:first-child {
     color: var(--secondary-color-light);
 }
 .play-b {

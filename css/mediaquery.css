@@ -53,6 +53,22 @@
     aside {
         width: 4rem;
     }
+    #nav-app ul li, 
+    #logo-small {
+        border: 0!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
+        padding-bottom: 1rem;
+    }
+    .fa-lines-leaning {
+        padding-right: 0.4rem;
+    }
+    #nav-app,
+    #foot-side-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     #logo-small {
         display: inline-block;
     }
@@ -85,7 +101,7 @@
     footer>div img,
     #dx-foot .play-b {
         display: none !important;
-    }    
+    }
     #main-page {
         padding-top: 2rem;
     }
