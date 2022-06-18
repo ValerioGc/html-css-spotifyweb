@@ -5,32 +5,18 @@
     --secondary-color-light: #717171;
     --grey-color: #282828;
 }
-/* Regole colori generali */
+/* 
+    Regole colori generali 
+*/
 .col-w {
     color: var(--secondary-color);
 }
 .col-inherit {
     color: inherit;
 }
-/* Colori Sezioni Pagina */
-aside {
-    background-color: var(--primary-color);
-}
-aside,
-aside ul li a, 
-aside ul li a:active,
-aside hr {
-    color: var(--secondary-color-light);
-}
-#call-action {
-    background-color: #080b1276;
-}
-#main-page {
-    background-color: var(--primary-color-light);
-}
-footer {
-    background-color: var(--grey-color);
-}
+/* 
+    Colori Comuni Pagina 
+*/
 .btn,
 #main-page h1,
 #main-page h2,
@@ -46,27 +32,50 @@ aside h5,
 #main-page,
 #main-page ul li a,
 #dx-foot {
-    color:var(--secondary-color-light)
+    color: var(--secondary-color-light)
+}
+/* 
+    Colori Aside Pagina 
+*/
+aside {
+    background-color: var(--primary-color);
+}
+aside,
+aside ul li a,
+aside hr {
+    color: var(--secondary-color-light);
 }
 .fa-plus {
     background-color: var(--secondary-color-light);
     color: var(--primary-color);
 }
-footer > div > div:first-child {
-    color: var(--secondary-color-light);
+/* 
+    Colori Main-Pagine 
+*/
+#call-action {
+    background-color: #080b1276;
 }
-
-.play-b-bkg {
-    background-color: #c1c1c1;
+#main-page {
+    background-color: var(--primary-color-light);
+}
+.overlay {
+    background-color: #00000082;
+}
+/* 
+    Colori Footer Pagina 
+*/
+footer {
+    background-color: var(--grey-color);
+}
+footer>div>div:first-child {
+    color: var(--secondary-color-light);
 }
 .play-b {
     background-color: #5a5a5a;
 }
-
+.play-b-bkg {
+    background-color: #c1c1c1;
+}
 svg.pointer-bar {
     background-color: var(--secondary-color);
-}
-
-.overlay {
-    background-color: #00000082;
 }

@@ -8,7 +8,9 @@
 body {
     font-family: 'Raleway', sans-serif;
 }
-/* Regole comuni testo */
+/* 
+    Regole comuni testo 
+*/
 .font-s-0_5 {
     font-size: 0.8rem;
 }
@@ -57,7 +59,9 @@ body {
 .overflow-y-a {
     overflow-y: auto;
 }
-/* Regole comuni Display */
+/* 
+    Regole comuni Display 
+*/
 .d-none {
     display: none;
 }
@@ -67,7 +71,9 @@ body {
 .d-block {
     display: block;
 }
-/* Regole comuni flex */
+/* 
+    Regole comuni flex 
+*/
 .d-flex {
     display: flex;
 }
@@ -86,7 +92,9 @@ body {
 .al-items-c {
     align-items: center;
 }
-/* Regole comuni Padding */
+/* 
+    Regole comuni Padding 
+*/
 .pad-x-1 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -120,7 +128,9 @@ body {
 .margin-y-b-2 {
     margin-bottom: 2rem;
 }
-/* Regole comuni Dimensioni */
+/* 
+    Regole comuni Dimensioni 
+*/
 .w-70 {
     width: 70%;
 }
@@ -130,9 +140,11 @@ body {
 .h-100 {
     height: 100%;
 }
-/* Regole pagina*/
+/*
+    Regole pagina
+*/
 main {
-    height: 87vh;
+    height: 88vh;
 }
 ul li a {
     text-decoration: none;
@@ -143,24 +155,16 @@ ul li a {
 #playlist ul li a {
     line-height: 1.7rem;
 } 
-#call-action {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: calc(100% - 15rem);
-    height: 6rem;
-    flex-shrink: 0;
-}
-#call-action a {
-    margin-right: 1rem;
-}
+
 .btn {
     float: right;
     border: 1px solid var(--secondary-color);
     margin: 1.8rem 0.2rem;
     padding: 0.5rem 2rem;
 }
-/* Regole Aside */
+/* 
+    Regole Aside 
+*/
 aside {
     width: 15rem;
     flex-shrink: 0;
@@ -171,20 +175,20 @@ aside > div:first-child {
 aside > div {
     margin: 0 1.5rem;
 }
+aside h5 {
+    font-size: 1rem;
+}
 #nav-app ul li {
     padding-left: 1.3rem;
     border-left: 2px solid;
     border-color: var(--primary-color);
 }
-
 #nav-app ul li:first-child {
     border-color: limegreen;
 }
-
 #nav-app img {
     padding-left: 1.3rem;
 }
-
 .fa-magnifying-glass,
 .fa-home {
     padding-right: 0.3rem;
@@ -200,7 +204,20 @@ aside > div {
     font-size: 1.3rem;
     margin-right:0.3rem ;
 }
-/* Regole main-page */
+/* 
+    Regole main-page
+ */
+#call-action {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 15rem);
+    height: 6rem;
+    flex-shrink: 0;
+}
+#call-action a {
+    margin-right: 1rem;
+}
 #main-page {
     padding-top: 8rem;
 }
@@ -231,9 +248,11 @@ aside > div {
     left: 0;
     display: none;
 }
-/* Player-Bar Footer */
+/* 
+    Player-Bar Footer 
+*/
 footer {
-    height: 13vh;
+    height: 12vh;
 }
 footer > div img {
     width: 20%;
@@ -246,8 +265,9 @@ footer > div > div:first-child,
 footer > div > div:last-child {
     flex-basis: 15%;
 }
-/* Player-Bar Progression Bar */
-
+/* 
+    Player-Bar Progression Bar 
+*/
 .play-b-bkg {
     width: 25%;
     height: 0.4rem;
@@ -268,10 +288,5 @@ svg.pointer-bar {
     position: absolute;
     top: -70%;
     left: 22%;
-}
-
-
-aside h5 {
-    font-size: 1rem;
 }
 
