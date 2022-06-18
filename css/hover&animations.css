@@ -3,6 +3,7 @@
 */
 aside h5:hover,
 #playlist h4 a:hover,
+#playlist div div i:hover,
 #foot-side-nav p a:hover,
 main ul li a:hover,
 #main-page ul li a:hover,
@@ -14,9 +15,6 @@ footer .fa-volume-high:hover,
 .fa-heart:hover {
     color: var(--secondary-color);
     transition: all 0.2s linear 0s;
-}
-#playlist div div i:hover {
-    background-color: var(--secondary-color);
 }
 #call-action a:hover,
 .n-b:hover,
