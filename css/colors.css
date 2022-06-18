@@ -41,7 +41,8 @@ aside h4 {
     color: var(--secondary-color);
 }
 .btn.t2,
-aside h4 i,
+aside h5 i,
+aside h5,
 #main-page,
 #main-page ul li a,
 #dx-foot {
@@ -50,4 +51,22 @@ aside h4 i,
 .fa-plus {
     background-color: var(--secondary-color-light);
     color: var(--primary-color);
+}
+footer > div > div:first-child {
+    color: var(--secondary-color-light);
+}
+
+.play-b-bkg {
+    background-color: #c1c1c1;
+}
+.play-b {
+    background-color: #5a5a5a;
+}
+
+svg.pointer-bar {
+    background-color: var(--secondary-color);
+}
+
+.overlay {
+    background-color: #00000082;
 }

@@ -54,6 +54,9 @@ body {
 .overflow-y {
     overflow-y: scroll;
 }
+.overflow-y-a {
+    overflow-y: auto;
+}
 /* Regole comuni Display */
 .d-none {
     display: none;
@@ -84,6 +87,10 @@ body {
     align-items: center;
 }
 /* Regole comuni Padding */
+.pad-x-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 .pad-x-1_5 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -125,45 +132,65 @@ body {
 }
 /* Regole pagina*/
 main {
-    height: 88vh;
+    height: 87vh;
 }
 ul li a {
     text-decoration: none;
 }
-ul li {
+ul li a {
     line-height: 2rem;
-}
+} 
+#playlist ul li a {
+    line-height: 1.7rem;
+} 
 #call-action {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1;
-    width: 86%;
+    width: calc(100% - 15rem);
     height: 6rem;
     flex-shrink: 0;
 }
 #call-action a {
     margin-right: 1rem;
 }
-/* Regole Bottoni */
 .btn {
     float: right;
-    border: 1px solid #fff;
+    border: 1px solid var(--secondary-color);
     margin: 1.8rem 0.2rem;
     padding: 0.5rem 2rem;
-    text-decoration: none;
 }
 /* Regole Aside */
 aside {
     width: 15rem;
     flex-shrink: 0;
-    z-index: 2;
 }
 aside > div:first-child {
-    margin: 0 1.5rem 0.5rem;
+    margin: 0 0 0.5rem;
 }
 aside > div {
     margin: 0 1.5rem;
+}
+#nav-app ul li {
+    padding-left: 1.3rem;
+    border-left: 2px solid;
+    border-color: var(--primary-color);
+}
+
+#nav-app ul li:first-child {
+    border-color: limegreen;
+}
+
+#nav-app img {
+    padding-left: 1.3rem;
+}
+
+.fa-magnifying-glass,
+.fa-home {
+    padding-right: 0.3rem;
+}
+.fa-lines-leaning {
+    padding-left: 0.3rem;
 }
 #playlist {
     height: 64%;
@@ -171,10 +198,17 @@ aside > div {
 .fa-plus {
     padding: 0.5rem;
     font-size: 1.3rem;
+    margin-right:0.3rem ;
 }
 /* Regole main-page */
 #main-page {
     padding-top: 8rem;
+}
+#main-page hr {
+    border: 1px solid lime;
+    width: 40%;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
 }
 #main-page ul li {
     display: inline-block;
@@ -184,54 +218,60 @@ aside > div {
     margin: 1.5rem 0.5rem;
     width: calc(100% / 6 - 1rem);
 }
-/* Regole footer*/
-footer {
-    height: 12vh;
-}
-footer > div img {
-    width: 20%;
-    margin-left: 1rem;
-}
 #main-page .img-playlist > img {
     display: block;
 }
-.img-playlist {
-    position: relative;
+.img-playlist,
+.play-b {
+    cursor: pointer;
 }
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #00000082;
     display: none;
 }
-/* Footer */
-footer > div > div:first-child {
-    color: var(--secondary-color-light);
-    flex-basis: 15%;
+/* Player-Bar Footer */
+footer {
+    height: 13vh;
+}
+footer > div img {
+    width: 20%;
+    margin-left: 1rem;
 }
 footer #player-bar {
     flex-basis: 40%;
 }
+footer > div > div:first-child,
 footer > div > div:last-child {
     flex-basis: 15%;
 }
+/* Player-Bar Progression Bar */
 
-/* Player Progression Bar */
-.play-b {
-    background-color: #5a5a5a;
-    height: 6px;
+.play-b-bkg {
+    width: 25%;
+    height: 0.4rem;
+}
+.img-playlist,
+.pb2,
+.pb2_2 {
+    position: relative;
 }
 .pb2 {
     width: 50%;
     margin-right: 1rem;
 }
-.pb_2 {
+.pb2_2 {
     width: 80%;
 }
-.play-b-bkg {
-    background-color: #c1c1c1;
-    width: 25%;
+svg.pointer-bar {
+    position: absolute;
+    top: -70%;
+    left: 22%;
 }
 
+
+aside h5 {
+    font-size: 1rem;
+}
 

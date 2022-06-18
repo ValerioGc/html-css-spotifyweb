@@ -1,33 +1,48 @@
-/* Effetti Main Page */
-.img-playlist:hover .overlay {
-    display: flex;
-    transition:all 0.2s linear 0.1s;
-}
-
+/* 
+    Effetti Hover
+*/
+aside h5:hover,
 #playlist h4 a:hover,
 #foot-side-nav p a:hover,
+main ul li a:hover,
 #main-page ul li a:hover,
 #main-page ul li h4:hover,
-main ul li a:hover,
 footer .fa-display:hover,
 footer .fa-list-ul:hover,
 footer .fa-volume-high:hover,
 .fa-folder:hover,
-.fa-heart:hover{
+.fa-heart:hover {
     color: var(--secondary-color);
     transition: all 0.2s linear 0s;
 }
-
-#call-action a:hover {
-    transform: scale(1.2) translate(-1.2rem, 0);
-    transition: all 0.1s linear 0s;
-}
-
 #playlist div div i:hover {
     background-color: var(--secondary-color);
 }
-
+#call-action a:hover,
+.n-b:hover,
+.play-b:hover svg,
+.play-b:hover .play-b-bkg,
+#player-bar a {
+    transition: all 0.1s linear 0s;
+}
+#call-action a:hover {
+    transform: scale(1.2) translate(-1.2rem, 0);
+}
 .n-b:hover {
     color: var(--secondary-color);
     text-decoration: underline;
+}
+.play-b:hover .play-b-bkg {
+    background-color: limegreen;
+}
+.play-b:hover svg {
+    display: inline-block;
+}
+#player-bar a:hover i {
+    transform: scale(1.2);
+}
+/* Overlay Immagini */
+.img-playlist:hover .overlay {
+    display: flex;
+    transition: all 0.2s linear 0.1s;
 }
