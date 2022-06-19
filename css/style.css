@@ -1,3 +1,12 @@
+/* 
+    Variabili Dimensioni
+*/
+:root {
+    --dim-rem-0_3: 0.3rem;
+    --dim-rem-0_5: 0.5rem;
+    --dim-rem-1: 1rem;
+}
+/************************** */
 *,
 *::after,
 *::before {
@@ -87,32 +96,32 @@ body {
     Regole comuni Padding  e Margin
 */
 .pad-x-0_5 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: var(--dim-rem-0_5);
+    padding-right: var(--dim-rem-0_5);
 }
 .pad-x-l-0_5 {
-    padding-left: 0.5rem;
+    padding-left: var(--dim-rem-0_5);
 }
 .pad-x-1 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: var(--dim-rem-1);
+    padding-right: var(--dim-rem-1);
 }
 .pad-y-0_5 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: var(--dim-rem-0_5);
+    padding-bottom: var(--dim-rem-0_5);
 }
 .pad-y-t-0_5 {
-    padding-top: 0.5rem;
+    padding-top: var(--dim-rem-0_5);
 }
 .pad-y-b-0_5 {
-    padding-bottom: 0.5rem;
+    padding-bottom: var(--dim-rem-0_5);
 }
 .pad-y-1 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: var(--dim-rem-1);
+    padding-bottom: var(--dim-rem-1);
 }
 .pad-y-t-1 {
-    padding-top: 1rem;
+    padding-top: var(--dim-rem-1);
 }
 .margin-y-b-2 {
     margin-bottom: 2rem;
@@ -146,7 +155,7 @@ ul li a {
     float: right;
     border: 1px solid var(--secondary-color);
     margin: 1.8rem 0.2rem;
-    padding: 0.5rem 2rem;
+    padding: var(--dim-rem-0_5) 2rem;
 }
 /* 
     Regole Aside 
@@ -156,13 +165,13 @@ aside {
     flex-shrink: 0;
 }
 aside > div:first-child {
-    margin: 0 0 0.5rem;
+    margin: 0 0 var(--dim-rem-0_5);
 }
 aside > div {
     margin: 0 1.5rem;
 }
 aside h5 {
-    font-size: 1rem;
+    font-size: var(--dim-rem-1);
 }
 #nav-app ul li {
     padding-left: 1.3rem;
@@ -189,7 +198,7 @@ aside h5 {
 .fa-circle-down,
 .fa-magnifying-glass,
 .fa-home {
-    padding-right: 0.3rem;
+    padding-right: var(--dim-rem-0_3);
 }
 .fa-lines-leaning {
     padding-left: 0.3rem;
@@ -200,11 +209,11 @@ aside h5 {
 .fa-plus {
     padding: 0.6rem;
     font-size: 1.3rem;
-    margin-right: 0.3rem ;
+    margin-right: var(--dim-rem-0_3);
 }
 .icon {
     width: 1.5rem;
-    margin-right: 0.3rem;
+    margin-right: var(--dim-rem-0_3);
 }
 /* 
     Regole main-page
@@ -218,7 +227,7 @@ aside h5 {
     z-index: 10;
 }
 #call-action a {
-    margin-right: 1rem;
+    margin-right: var(--dim-rem-1);
 }
 #main-page {
     padding-top: 8rem;
@@ -233,7 +242,7 @@ aside h5 {
 }
 #main-page ul li {
     display: inline-block;
-    padding: 0 1rem;
+    padding: 0 var(--dim-rem-1);
 }
 .card {
     margin: 1.5rem 0.5rem;
@@ -260,7 +269,7 @@ footer {
 }
 footer > div img {
     width: 3rem;
-    margin-left: 1rem;
+    margin-left: var(--dim-rem-1);
 }
 footer #player-bar {
     flex-basis: 40%;
@@ -272,7 +281,7 @@ footer > div > div:last-child {
 .fa-volume-high,
 .fa-display,
 .fa-list-ul {
-    padding-right: 0.3rem;
+    padding-right: var(--dim-rem-0_3);
 }
 /* 
     Player-Bar Progression Bar 
@@ -288,7 +297,7 @@ footer > div > div:last-child {
 }
 .pb2 {
     width: 6rem;
-    margin-right: 1rem;
+    margin-right: var(--dim-rem-1);
 }
 .pb2_2 {
     width: 80%;

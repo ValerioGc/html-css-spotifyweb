@@ -6,8 +6,8 @@
         justify-content: flex-start;
     }
     .card {
-        margin: 1rem 0.5rem;
-        width: calc(100% / 4 - 1rem);
+        margin: var(--dim-rem-1) var(--dim-rem-0_5);
+        width: calc(100% / 4 - var(--dim-rem-1));
     }
     #main-page h3, 
     #main-page p {
@@ -22,8 +22,7 @@
 *****************************/
 @media screen and (max-width: 768px) {
     .card {
-        margin: 1rem 0.5rem;
-        width: calc(100% / 2 - 1rem);
+        width: calc(100% / 2 - var(--dim-rem-1));
     }
     #main-page h3 {
         font-size: large;
@@ -32,7 +31,7 @@
         font-size: initial;
     }
     #player-bar a i {
-        padding: 0 0.3rem;
+        padding: 0 var(--dim-rem-0_3);
     }
 }
 /*****************************
@@ -51,14 +50,14 @@
         display: none!important;
     }
     aside {
-        width: 4rem;
+        width: 4rem!important;
     }
     #nav-app ul li, 
     #logo-small {
         border: 0!important;
         padding-left: 0!important;
         padding-right: 0!important;
-        padding-bottom: 1rem;
+        padding-bottom: var(--dim-rem-1);
     }
     .fa-lines-leaning {
         padding-right: 0.4rem;
@@ -76,7 +75,7 @@
         width: calc(100% - 4rem);
     }
     .btn {
-        padding:  0.4rem 1rem;
+        padding: 0.4rem var(--dim-rem-1);
     }
     footer > div img {
         width: 2rem;
@@ -109,8 +108,7 @@
         padding-top: 2rem;
     }
     .card {
-        margin: 1rem 0.5rem;
-        width: calc(100% - 1rem);
+        width: calc(100% - var(--dim-rem-1));
     }
     #player-bar a i{
         font-size: 1.3rem;
