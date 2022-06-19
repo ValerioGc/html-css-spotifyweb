@@ -45,9 +45,12 @@ aside ul li a,
 aside hr {
     color: var(--secondary-color-light);
 }
-.fa-plus {
+.fa-plus,
+.circle-user {
     background-color: var(--secondary-color-light);
-    color: var(--primary-color);
+}
+.circle-down {
+    filter: invert(48%) sepia(7%) saturate(17%) hue-rotate(19deg) brightness(90%) contrast(87%);
 }
 /* 
     Colori Main-Pagine 
@@ -70,6 +73,9 @@ footer {
 footer > div > div:first-child {
     color: var(--secondary-color-light);
 }
+/* 
+    Colori Player-Bar Progression Bar 
+*/
 .play-b {
     background-color: #5a5a5a;
 }

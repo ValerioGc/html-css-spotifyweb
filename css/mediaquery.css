@@ -78,17 +78,20 @@
     .btn {
         padding:  0.4rem 1rem;
     }
-    #player-bar a i {
-        padding: 0 0.2rem;
-    }
     footer > div img {
         width: 2rem;
     }
     #player-bar a i {
+        padding: 0 0.15rem;
         font-size: 1.4rem;
     }
     #player-bar .fa-circle-play {
         font-size: 1.9rem !important;
+    }
+    .fa-volume-high,
+    .fa-display,
+    .fa-list-ul {
+        padding-right: 0.2rem;
     }
 }
 /*****************************
@@ -98,7 +101,7 @@
     #call-action,
     .fa-heart,
     .fa-folder,
-    footer>div img,
+    footer > div img,
     #dx-foot .play-b {
         display: none !important;
     }
@@ -120,5 +123,20 @@
     }
     #dx-foot {
         flex-wrap: wrap;
+    }
+}
+/*****************************
+***MediaQuery Max-300px(XXXS)**
+*****************************/
+
+@media screen and (max-width: 300px) {
+    #dx-foot {
+        display: none;
+    }
+    footer #player-bar {
+        flex-basis: 100%;
+    }
+    #player-bar a i {
+        padding: 0;
     }
 }

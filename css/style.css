@@ -35,9 +35,6 @@ body {
 .t-align-c {
     text-align: center;
 }
-.t-align-r {
-    text-align: right;
-}
 .v-align-m {
     vertical-align: middle;
 }
@@ -74,9 +71,6 @@ body {
 .flex-d-col {
     flex-direction: column;
 }
-.f-shrink {
-    flex-shrink: 1;
-}
 .flex-wrap {
     flex-wrap: wrap;
 }
@@ -92,21 +86,20 @@ body {
 /* 
     Regole comuni Padding  e Margin
 */
+.pad-x-0_5 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.pad-x-l-0_5 {
+    padding-left: 0.5rem;
+}
 .pad-x-1 {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.pad-x-1_5 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
 .pad-y-0_5 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-}
-.pad-x-0_5 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
 }
 .pad-y-t-0_5 {
     padding-top: 0.5rem;
@@ -190,7 +183,9 @@ aside h5 {
     width: 3rem;
     padding-left: 0.6rem;
 }
-.fa-circle-user,
+#playlist {
+    height: calc(100% - 13rem);
+}
 .fa-circle-down,
 .fa-magnifying-glass,
 .fa-home {
@@ -199,16 +194,17 @@ aside h5 {
 .fa-lines-leaning {
     padding-left: 0.3rem;
 }
-#playlist {
-    height: calc(100% - 13rem);
+#foot-side-nav p a {
+    font-size: 0.8rem;
 }
 .fa-plus {
     padding: 0.6rem;
     font-size: 1.3rem;
     margin-right: 0.3rem ;
 }
-#foot-side-nav p a {
-    font-size: 0.8rem;
+.icon {
+    width: 1.5rem;
+    margin-right: 0.3rem;
 }
 /* 
     Regole main-page
@@ -226,6 +222,8 @@ aside h5 {
 }
 #main-page {
     padding-top: 8rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 #main-page hr {
     border: 1px solid lime;
@@ -271,6 +269,11 @@ footer > div > div:first-child,
 footer > div > div:last-child {
     flex-basis: 15%;
 } 
+.fa-volume-high,
+.fa-display,
+.fa-list-ul {
+    padding-right: 0.3rem;
+}
 /* 
     Player-Bar Progression Bar 
 */
@@ -295,3 +298,7 @@ svg.pointer-bar {
     top: -70%;
     left: 22%;
 }
+#player-bar div p {
+    padding: 0 0.2rem 0.2rem;
+}
+

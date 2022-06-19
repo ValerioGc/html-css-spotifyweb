@@ -2,10 +2,12 @@
     Effetti Hover
 */
 aside h5:hover,
+.fa-magnifying-glass:hover,
+.fa-house:hover,
+.fa-lines-leaning:hover,
 #playlist h4 a:hover,
 #playlist div div i:hover,
 #foot-side-nav p a:hover,
-#foot-side-nav p i:hover,
 main ul li a:hover,
 #main-page ul li a:hover,
 #main-page ul li h4:hover,
