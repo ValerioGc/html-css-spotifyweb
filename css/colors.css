@@ -48,6 +48,9 @@ aside ul li a,
 aside hr {
     color: var(--secondary-color-light);
 }
+.fa-plus {
+    color: var(--primary-color);
+}
 .fa-plus,
 .circle-user {
     background-color: var(--secondary-color-light);
