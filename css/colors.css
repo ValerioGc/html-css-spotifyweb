@@ -7,6 +7,7 @@
     --secondary-color: #fff;
     --secondary-color-light: #717171;
     --grey-color: #282828;
+    --overlay-animation-color: #32cd32;
 }
 /* 
     Regole colori generali 
@@ -51,7 +52,7 @@ aside hr {
     color: var(--secondary-color-light);
 }
 #nav-app ul li:first-child {
-    border-color: limegreen;
+    border-color: var(--overlay-animation-color);
 }
 .fa-plus {
     color: var(--primary-color);

@@ -34,7 +34,7 @@ footer .fa-volume-high:hover,
     text-decoration: underline;
 }
 .play-b:hover .play-b-bkg {
-    background-color: limegreen;
+    background-color: var(--overlay-animation-color);
 }
 .play-b:hover svg {
     display: inline-block;
@@ -58,17 +58,16 @@ footer .fa-volume-high:hover,
 }
 #playing-song {
     animation: img-rotate 4s ease-in-out infinite;
-    position: sticky;
 }
 
 @keyframes player-bar-running {
     from {
         width: 25%;
-        background-color: lime;
+        background-color: var(--overlay-animation-color);
     }
     to { 
         width: 100%;
-        background-color: lime;
+        background-color: var(--overlay-animation-color);
     }
 } 
 @keyframes svg-move {

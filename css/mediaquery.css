@@ -81,7 +81,7 @@
     .btn {
         padding: 0.4rem var(--dim-rem-1);
     }
-    footer > div img {
+    #playing-song {
         width: var(--dim-rem-2);
     }
     #player-bar a i {
@@ -107,7 +107,7 @@
     #call-action,
     .fa-heart,
     .fa-folder,
-    footer > div img,
+    #playing-song,
     #dx-foot .play-b {
         display: none !important;
     }
