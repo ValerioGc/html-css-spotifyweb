@@ -1,8 +1,18 @@
+/* 
+    Scrollbar pagina 
+*/
+::-webkit-scrollbar {
+    width: var(--dim-rem-1);
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
 /*
     Regole pagina
 */
 main {
-    height: 87vh;
+    height: 87.5vh;
 }
 ul li a {
     text-decoration: none;
