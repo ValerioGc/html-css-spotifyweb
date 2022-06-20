@@ -245,7 +245,7 @@ aside hr {
     padding-right: var(--dim-rem-1_5);
 }
 #main-page hr {
-    border: 1px solid color: var(--overlay-animation-color);
+    border: 1px solid var(--overlay-animation-color);
     width: 40%;
     margin-left: 50%;
     transform: translate(-50%, 0);
