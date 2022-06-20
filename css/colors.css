@@ -42,7 +42,6 @@ aside h5,
     Colori Aside Pagina 
 */
 aside,
-#foot-side-nav,
 #foot-side-nav > div {
     background-color: var(--primary-color);
 }
@@ -108,11 +107,15 @@ svg.pointer-bar {
 }
 .btn {
     box-shadow: 3px 5px 5px #53504d;
-    text-shadow: 2px 2px 5px #000;
 }
 #main-page ul li a,
 .card {
     text-shadow: 3px 3px 3px #3f3f43;
+}
+.btn
+#main-page h1,
+#main-page p {
+    text-shadow: 4px 3px 5px var(--primary-color);
 }
 .img-playlist:not(.i2) {
     box-shadow: 4px 5px 8px #454549;
@@ -123,6 +126,9 @@ svg.pointer-bar {
 /*
     Ombre Aside 
 */
+aside {
+    box-shadow: -5px -6px 10px -7px white inset;
+}
 #playlist a,
 #nav-app ul li a {
     text-shadow: 2px 2px 5px #4e4e50;
