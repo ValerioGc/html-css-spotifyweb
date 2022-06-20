@@ -100,9 +100,9 @@
         margin-right: 0;
     }
 }
-/*****************************
-***MediaQuery Max-491px(XXS)**
-*****************************/
+/******************************
+** MediaQuery Max-491px(XXS) **
+******************************/
 @media screen and (max-width: 491px) {
     #call-action,
     .fa-heart,
@@ -130,10 +130,9 @@
         flex-wrap: wrap;
     }
 }
-/*****************************
-***MediaQuery Max-300px(XXXS)**
-*****************************/
-
+/*******************************
+** MediaQuery Max-300px(3XS) **
+*******************************/
 @media screen and (max-width: 300px) {
     #dx-foot {
         display: none;

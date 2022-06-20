@@ -97,3 +97,51 @@ footer > div > div:first-child {
 svg.pointer-bar {
     background-color: var(--secondary-color);
 }
+/***************************
+***** Box & Text Shadow ****
+***************************/
+/* 
+    Ombre Corpo pagina 
+*/
+#call-action {
+    box-shadow: 8px -3px 10px #605d6c;
+}
+.btn {
+    box-shadow: 3px 5px 5px #53504d;
+    text-shadow: 2px 2px 5px #000;
+}
+#main-page ul li a,
+.card {
+    text-shadow: 3px 3px 3px #3f3f43;
+}
+.img-playlist:not(.i2) {
+    box-shadow: 4px 5px 8px #454549;
+}
+.i2 img {
+    box-shadow: 4px 5px 8px #454549;
+}
+/*
+    Ombre Aside 
+*/
+#playlist a,
+#nav-app ul li a {
+    text-shadow: 2px 2px 5px #4e4e50;
+}
+/* 
+    Ombre Footer   
+*/
+footer {
+    box-shadow: 0 2px 10px #5f5f5f;
+}
+.play-b,
+#playing-song {
+    box-shadow: 4px 3px 5px var(--primary-color);
+}
+#sx-foot div a i,
+#sx-foot div h4,
+#sx-foot div p,
+#player-bar p,
+#player-bar div a i,
+#dx-foot a i {
+    text-shadow: 4px 4px 5px var(--primary-color);
+}
