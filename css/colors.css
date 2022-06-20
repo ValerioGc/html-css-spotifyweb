@@ -118,11 +118,10 @@ svg.pointer-bar {
 }
 #main-page ul li a,
 .card {
-    text-shadow: 3px 3px 5px #434343;
+    text-shadow: 4px 4px 5px #232323;
 }
-.btn
-#main-page h1,
-#main-page p {
+.btn,
+#main-page .title-sec {
     text-shadow: 4px 3px 5px var(--primary-color);
 }
 .img-playlist:not(.i2) {
