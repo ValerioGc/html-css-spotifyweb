@@ -5,8 +5,13 @@
     --dim-rem-0_3: 0.3rem;
     --dim-rem-0_5: 0.5rem;
     --dim-rem-1: 1rem;
+    --dim-rem-1_5: 1.5rem;
+    --dim-rem-2: 2rem;
 }
 /************************** */
+html {
+    overflow: hidden;
+}
 *,
 *::after,
 *::before {
@@ -17,14 +22,14 @@
 body {
     font-family: 'Raleway', sans-serif;
 }
-/* 
+/*  
     Regole comuni testo 
 */
 .font-s-0_5 {
     font-size: 0.8rem;
 }
 .font-s-1_5 {
-    font-size: 1.5rem;
+    font-size: var(--dim-rem-1_5);
 }
 .font-s-2_5 {
     font-size: 2.5rem;
@@ -56,11 +61,11 @@ body {
 .b-rad-50 {
     border-radius: 50%;
 }
-.overflow-y {
-    overflow-y: scroll;
+.overflow-h {
+    overflow: hidden;
 }
 .overflow-y-a {
-    overflow-y: auto;
+    overflow: auto;
 }
 /* 
     Regole comuni Display 
@@ -124,7 +129,7 @@ body {
     padding-top: var(--dim-rem-1);
 }
 .margin-y-b-2 {
-    margin-bottom: 2rem;
+    margin-bottom: var(--dim-rem-2);
 }
 /* 
     Regole comuni Dimensioni 
@@ -139,13 +144,13 @@ body {
     Regole pagina
 */
 main {
-    height: 88vh;
+    height: 87.5vh;
 }
 ul li a {
     text-decoration: none;
 }
 ul li a {
-    line-height: 2rem;
+    line-height: var(--dim-rem-2);
 } 
 #playlist ul li a {
     line-height: 1.7rem;
@@ -155,7 +160,7 @@ ul li a {
     float: right;
     border: 1px solid var(--secondary-color);
     margin: 1.8rem 0.2rem;
-    padding: var(--dim-rem-0_5) 2rem;
+    padding: var(--dim-rem-0_5) var(--dim-rem-2);
 }
 /* 
     Regole Aside 
@@ -165,10 +170,11 @@ aside {
     flex-shrink: 0;
 }
 aside > div:first-child {
-    margin: 0 0 var(--dim-rem-0_5);
+    margin-bottom: var(--dim-rem-0_5);
 }
-aside > div {
-    margin: 0 1.5rem;
+#playlist,
+#foot-side-nav {
+    margin-left: var(--dim-rem-1_5);
 }
 aside h5 {
     font-size: var(--dim-rem-1);
@@ -178,41 +184,45 @@ aside h5 {
     border-left: 2px solid;
     border-color: var(--primary-color);
 }
-#nav-app ul li:first-child {
-    border-color: limegreen;
-}
-#nav-app {
-    height: 12rem;
-}
 #logo {
-    padding-left: 1.3rem;
     width: 70%;
 }
 #logo-small {
     width: 3rem;
-    padding-left: 0.6rem;
 }
 #playlist {
-    height: calc(100% - 13rem);
+    height: calc(100% - 17.5rem);
+    width: calc(100% - var(--dim-rem-1_5));
 }
-.fa-circle-down,
+#playlist ul {
+    height: calc(100% - 4rem);
+}
+.circle-down,
 .fa-magnifying-glass,
-.fa-home {
+.fa-house {
     padding-right: var(--dim-rem-0_3);
 }
 .fa-lines-leaning {
-    padding-left: 0.3rem;
+    padding-left: var(--dim-rem-0_3);
 }
-#foot-side-nav p a {
+#foot-side-nav div:first-child a {
     font-size: 0.8rem;
 }
+#foot-side-nav {
+    height: 4rem;
+}
+aside hr {
+    width: 12rem;
+    border: 0.5px solid var(--secondary-color);
+}
 .fa-plus {
-    padding: 0.6rem;
+    padding: var(--dim-rem-0_5);
     font-size: 1.3rem;
     margin-right: var(--dim-rem-0_3);
 }
 .icon {
-    width: 1.5rem;
+    width: var(--dim-rem-1_5);
+    height: var(--dim-rem-1_5);
     margin-right: var(--dim-rem-0_3);
 }
 /* 
@@ -224,15 +234,15 @@ aside h5 {
     right: 0;
     width: calc(100% - 15rem);
     height: 6rem;
-    z-index: 10;
+    z-index: 9;
 }
 #call-action a {
     margin-right: var(--dim-rem-1);
 }
 #main-page {
     padding-top: 8rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: var(--dim-rem-1_5);
+    padding-right: var(--dim-rem-1_5);
 }
 #main-page hr {
     border: 1px solid lime;
@@ -245,7 +255,7 @@ aside h5 {
     padding: 0 var(--dim-rem-1);
 }
 .card {
-    margin: 1.5rem 0.5rem;
+    margin: var(--dim-rem-1_5) var(--dim-rem-0_5);
     width: calc(100% / 6 - 1rem);
 }
 #main-page .img-playlist > img {
@@ -264,20 +274,29 @@ aside h5 {
 /* 
     Player-Bar Footer 
 */
-footer {
-    height: 12vh;
-}
-footer > div img {
-    width: 3rem;
-    margin-left: var(--dim-rem-1);
-}
 footer #player-bar {
     flex-basis: 40%;
 }
 footer > div > div:first-child,
 footer > div > div:last-child {
     flex-basis: 15%;
-} 
+}
+footer {
+    min-height: 12.5vh;
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+}
+footer > div img {
+    width: 3rem;
+    margin-left: var(--dim-rem-1);
+}
+footer #player-bar div:last-child {
+    padding-bottom: var(--dim-rem-0_3);
+}
+#player-bar div p {
+    padding: 0 0.2rem 0.2rem;
+}
 .fa-volume-high,
 .fa-display,
 .fa-list-ul {
@@ -307,7 +326,3 @@ svg.pointer-bar {
     top: -70%;
     left: 22%;
 }
-#player-bar div p {
-    padding: 0 0.2rem 0.2rem;
-}
-

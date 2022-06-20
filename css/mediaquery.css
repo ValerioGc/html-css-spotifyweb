@@ -46,7 +46,7 @@
     #foot-side-nav h4 a,
     #foot-side-nav h5 a,
     #foot-side-nav hr,
-    #foot-side-nav p a {
+    #foot-side-nav div a {
         display: none!important;
     }
     aside {
@@ -67,6 +67,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0;
+    }
+    #foot-side-nav p {
+        margin-right: var(--dim-rem-0_3);
     }
     #logo-small {
         display: inline-block;
@@ -78,7 +82,7 @@
         padding: 0.4rem var(--dim-rem-1);
     }
     footer > div img {
-        width: 2rem;
+        width: var(--dim-rem-2);
     }
     #player-bar a i {
         padding: 0 0.15rem;
@@ -91,6 +95,9 @@
     .fa-display,
     .fa-list-ul {
         padding-right: 0.2rem;
+    }
+    .icon {
+        margin-right: 0;
     }
 }
 /*****************************
@@ -105,7 +112,7 @@
         display: none !important;
     }
     #main-page {
-        padding-top: 2rem;
+        padding-top: var(--dim-rem-2);
     }
     .card {
         width: calc(100% - var(--dim-rem-1));

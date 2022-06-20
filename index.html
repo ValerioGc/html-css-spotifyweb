@@ -20,16 +20,16 @@
         <!-- Librerie -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-    <body class="debug#">
+    <body class="debug# overflow-y-h">
         <!--
             Corpo Pagina 
         -->        
-        <main class="d-flex">
+        <main class="d-flex overflow-y-h">
             <!-- 
                 Nav Bar Laterale 
             -->
-            <aside class="bold">
-                <div id="nav-app">
+            <aside class="bold overflow-y-h">
+                <div id="nav-app" class="d-flex flex-d-col">
                     <img class="pad-y-1" id="logo" src="img/logo.svg" alt="Logo Spotify">
                     <img class="pad-y-1 d-none" id="logo-small" src="img/logo-small.svg" alt="Logo Spotify small">
                     <ul class="list-sty-n">
@@ -50,8 +50,8 @@
                 <!-- 
                 Sezione Playlist 
                 -->
-                <div class="d-flex flex-d-col just-sp-between" id="playlist">
-                    <div>
+                <div class="d-flex" id="playlist">
+                    <div class="w-100 overflow-y-h">
                         <h4 class="pad-y-0_5 uppercase">Playlist</h4>
                         <div class="pad-y-0_5">
                             <div>
@@ -61,7 +61,7 @@
                                 </h5>
                             </div>
                         </div>
-                        <ul class="list-sty-n overflow-y-a">
+                        <ul class="d-flex flex-d-col list-sty-n overflow-y-a">
                             <li><a href="#">Nome Playlist</a></li>
                             <li><a href="#">Nome Playlist</a></li>
                             <li><a href="#">Nome Playlist</a></li>
@@ -71,23 +71,24 @@
                             <li><a href="#">Nome Playlist</a></li>
                         </ul>
                     </div>
-                    <!-- 
-                        Footer Nav-Bar Laterale 
-                    -->
-                    <div id="foot-side-nav">
-                        <p class="v-align-m pad-y-b-0_5">
-                            <img class="icon circle-down v-align-m" src="img/download.svg" alt="Icona Installa App">
-                            <a class="text-dec-n col-inherit" href="#">Installa app</a>
-                        </p>
-                        <hr>
-                        <div class="v-align-m pad-y-t-0_5">
-                            <img class="icon circle-user v-align-m b-rad-50" src="img/profile.svg" alt="Icona profilo utente">
-                            <h4 class="d-in-block">
-                                <a class="text-dec-n col-inherit" href="#">John Doe</a>
-                            </h4>
-                        </div>
+                </div>
+                <!-- 
+                    Footer Nav-Bar Laterale 
+                -->
+                <div id="foot-side-nav">
+                    <div class="v-align-m pad-y-b-0_5">
+                        <img class="icon circle-down v-align-m" src="img/download.svg" alt="Icona Installa App">
+                        <a class="text-dec-n col-inherit" href="#">Installa app</a>
+                    </div>
+                    <hr>
+                    <div class="v-align-m pad-y-t-0_5">
+                        <img class="icon circle-user v-align-m b-rad-50" src="img/profile.svg" alt="Icona profilo utente">
+                        <h4 class="d-in-block">
+                            <a class="text-dec-n col-inherit" href="#">John Doe</a>
+                        </h4>
                     </div>
                 </div>
+
             </aside>
             <!-- 
                 Barra Call-action 
@@ -98,7 +99,7 @@
             <!-- 
                 Corpo Pagina Principale 
             -->
-            <div id="main-page" class="w-100 overflow-y bold">
+            <div id="main-page" class="w-100 overflow-y-a bold">
                 <div class="margin-y-b-2">
                     <!-- 
                         Nav-bar Corpo Pagina 
@@ -252,7 +253,7 @@
         <!-- 
             Footer Pagina 
         -->
-        <footer>
+        <footer class="w-100">
             <div class="d-flex just-sp-between al-items-c h-100">
                 <!--
                     Parte DX Player

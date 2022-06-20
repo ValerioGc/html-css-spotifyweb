@@ -40,13 +40,18 @@ aside h5,
 /* 
     Colori Aside Pagina 
 */
-aside {
+aside,
+#foot-side-nav,
+#foot-side-nav > div {
     background-color: var(--primary-color);
 }
 aside,
 aside ul li a,
 aside hr {
     color: var(--secondary-color-light);
+}
+#nav-app ul li:first-child {
+    border-color: limegreen;
 }
 .fa-plus {
     color: var(--primary-color);
