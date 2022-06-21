@@ -150,12 +150,12 @@
         height: calc(100% - 19rem);
     }
 }
-@media screen and (max-height: 549px) {
+@media screen and (max-height: 530px) {
     #playlist {
         height: calc(100% - 19.5rem);
     }
 }
-@media screen and (max-height: 459px) {
+@media screen and (max-height: 450px) {
     #playlist {
         height: calc(100% - 20rem);
     }
