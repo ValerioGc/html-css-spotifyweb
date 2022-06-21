@@ -144,7 +144,9 @@
         padding: 0;
     }
 }
-/* Allineamento verticale sezione utente aside */
+/*******************************************************
+***** Allineamento verticale sezione utente aside ******
+*******************************************************/
 @media screen and (max-height: 649px) {
     #playlist {
         height: calc(100% - 19rem);
