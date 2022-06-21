@@ -144,3 +144,27 @@
         padding: 0;
     }
 }
+/* Allineamento verticale sezione utente aside */
+@media screen and (max-height: 649px) {
+    #playlist {
+        height: calc(100% - 19rem);
+    }
+}
+@media screen and (max-height: 549px) {
+    #playlist {
+        height: calc(100% - 19.5rem);
+    }
+}
+@media screen and (max-height: 459px) {
+    #playlist {
+        height: calc(100% - 20rem);
+    }
+}
+@media screen and (max-height: 310px) {
+    #call-action {
+        display: none;
+    }
+    #main-page {
+        padding-top: 1rem;
+    }
+}

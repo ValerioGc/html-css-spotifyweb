@@ -7,7 +7,7 @@
     --secondary-color: #fff;
     --secondary-color-light: #717171;
     --grey-color: #282828;
-    --overlay-animation-color: #32cd32;
+    --overlay-animation-color: rgb(50, 205, 50);
 }
 /* 
     Regole colori generali 
@@ -50,7 +50,7 @@ aside h5,
     Colori Aside Pagina 
 */
 aside,
-#foot-side-nav > div {
+#foot-side-nav {
     background-color: var(--primary-color);
 }
 aside,

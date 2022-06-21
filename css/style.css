@@ -60,7 +60,7 @@ aside h5 {
     width: 3rem;
 }
 #playlist {
-    height: calc(100% - 17.5rem);
+    height: calc(100% - 18.2rem);
     width: calc(100% - var(--dim-rem-1_5));
 }
 #playlist ul {
@@ -78,7 +78,7 @@ aside h5 {
     font-size: 0.8rem;
 }
 #foot-side-nav {
-    height: 4rem;
+    height: 4.5rem;
     width: 85%;
 }
 aside hr {
