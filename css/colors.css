@@ -136,6 +136,9 @@ svg.pointer-bar {
 aside {
     box-shadow: -5px -6px 10px -7px #2b2b2b inset;
 }
+#logo {
+    filter: invert(56%) sepia(78%) saturate(726%) hue-rotate(73deg) brightness(101%) contrast(83%);    
+}
 #playlist a,
 #nav-app ul li a {
     text-shadow: 2px 2px 5px #4e4e50;
